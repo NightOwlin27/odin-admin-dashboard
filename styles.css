@@ -7,8 +7,9 @@
 
 body {
     display: grid;
-    grid-template-rows: 250px 400px 400px;
+    grid-template-rows: 200px 400px 400px;
     grid-template-columns: 300px 500px 500px;
+    font-family: 'roboto', sans-serif;
 }
 
 .dashboard {
@@ -17,12 +18,44 @@ body {
     background-color: lightblue;
 }
 
+.dashboard-title {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    padding-top: 1.2em;
+}
+
+.dashboard-icon {
+    width: 3em;
+    margin-left: 1.5em;
+}
+
+.dashboard-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sub-dashboard {
+    display: flex;
+    align-items: space-between;
+    gap: 1.5em;
+    margin: 3.5em 0em 0em 1.2em;
+    font-size: 1.2rem;
+
+}
+
+.svg {
+    margin-bottom: .8em;
+}
+
+.icon {
+    margin-bottom: 1.8em;
+}
+
 header {
     border: 2px solid red;
     grid-column: span 2;
 }
-
-
 
 main {
     border: 2px solid green;
@@ -33,11 +66,14 @@ main {
 
 .text {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 2rem 11rem 1rem 1rem;
+    font-size: 1rem;
 }
 
 .board {
     display: flex;
+    gap: 1.5rem;
 }
 
 .projects {
@@ -47,17 +83,39 @@ main {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr ;
     border: 2px solid darkgreen;
-    background-color: whitesmoke;
+    background-color: lightgrey;
+    gap: 1.2rem;
+    margin-left: 1rem;
 }
-
 
 .project {
     border: 2px solid pink;
     border-radius: 5px;
+    background-color: whitesmoke;
 }
 .other {
     width: 30%;
     height: 700px;
     display: grid;
+    grid-template-rows: 1fr 50px .8fr;
+    grid-template-columns: 1fr;
     border: 2px solid brown;
+}
+
+.announcements,
+.trending {
+    border: 2px solid purple;
+    /* grid-row: span 2; */
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.trending-text {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.trending {
+    /* border: 2px solid purple;
+    grid-row: span 2; */
 }
