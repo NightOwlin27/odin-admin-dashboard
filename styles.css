@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 250px 400px 400px;
+    grid-template-columns: 300px 500px 500px;
+}
+
+.dashboard {
+    border: 2px solid blue;
+    grid-row: span 3;
+    background-color: lightblue;
+}
+
+header {
+    border: 2px solid red;
+    grid-column: span 2;
+}
+
+
+
+main {
+    border: 2px solid green;
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: lightgrey;
+}
+
+.text {
+    display: flex;
+    justify-content: space-around;
+}
+
+.board {
+    display: flex;
+}
+
+.projects {
+    width: 70%;
+    height: 700px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    border: 2px solid darkgreen;
+    background-color: whitesmoke;
+}
+
+
+.project {
+    border: 2px solid pink;
+    border-radius: 5px;
+}
+.other {
+    width: 30%;
+    height: 700px;
+    display: grid;
+    border: 2px solid brown;
+}
