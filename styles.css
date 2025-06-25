@@ -21,7 +21,7 @@ body {
 .dashboard-title {
     display: flex;
     align-items: center;
-    gap: 1.5em;
+    gap: 1.4em;
     padding-top: 1.2em;
 }
 
@@ -37,24 +37,109 @@ body {
 
 .sub-dashboard {
     display: flex;
-    align-items: space-between;
     gap: 1.5em;
     margin: 3.5em 0em 0em 1.2em;
     font-size: 1.2rem;
 
 }
 
+.svgs {
+    border: 2px solid purple;
+    padding-top: .6em;
+    width: 2em;
+}
+
 .svg {
-    margin-bottom: .8em;
+    width: 1.5em;
+    margin-bottom: 1.15em;
+    border: 2px solid darkblue;
+}
+
+.icons {
+    padding: .7em 0em 0em 0em;
+    border: 2px solid purple;
 }
 
 .icon {
-    margin-bottom: 1.8em;
+    margin-bottom: 1.5em;
+    border: 2px solid darkblue;
 }
 
 header {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 600px 400px;
     border: 2px solid red;
     grid-column: span 2;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: 2px solid pink;
+}
+
+
+.search {
+    background-color: lightgray;
+    width: 480px;
+    height: 25px;
+    border-radius: 20px;
+    margin-bottom: 1em;
+}  
+
+.profile-corner {
+    border: 2px solid pink;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.profile-img-1,
+.profile-corner-text {
+    margin-bottom: 1em;
+}
+
+.profile-img-1,
+.profile-img-2 {
+    border-radius: 50%;
+}
+
+.profile-header {
+    border: 2px solid pink;
+    display: flex;
+    margin-left: 2em;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.header-small-text {
+    font-size: .8rem;
+    margin-bottom: .6em;
+}
+
+.header-big-text {
+    font-size: 1.2rem;
+}
+
+.buttons {
+    border: 2px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+}
+
+.btn {
+    all: unset;
+    padding: 7px 30px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: lightblue;
 }
 
 main {
@@ -81,18 +166,31 @@ main {
     height: 700px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr ;
-    border: 2px solid darkgreen;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid darkgreen; */
     background-color: lightgrey;
     gap: 1.2rem;
     margin-left: 1rem;
 }
 
 .project {
-    border: 2px solid pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 5px;
+    border-left: 8px solid orange;
     background-color: whitesmoke;
+    padding: 1.5em 1em .5em 1em;
 }
+
+.project-icons {
+    align-self: flex-end;
+}
+
+.proj {
+    margin-left: 1em;
+}
+
 .other {
     width: 30%;
     height: 700px;
