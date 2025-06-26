@@ -1,4 +1,4 @@
-The purpose of this project is to showcase basic understanding of CSS grid.
+The purpose of this project is to showcase a basic understanding of CSS grid.
 
 Project assignment/instructions can be found at:
 
