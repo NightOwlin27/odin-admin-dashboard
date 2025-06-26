@@ -10,7 +10,46 @@
     --med-green: #131F12;
     --dark-green: #131F12;
     --brown: #3A230E;
+    --dark-brown: #301d0b;
 }
+
+/* TYPOGRAPHY ---------------------------------------- */
+
+b,
+.trending-text,
+.sub-project-text,
+.sub-trend-text {
+    color: var(--dark-brown);
+    font-weight: bold;
+}
+
+.dashboard-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-small-text {
+    font-size: .8rem;
+    margin-bottom: .6em;
+}
+
+.header-big-text {
+    font-size: 1.2rem;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 11rem 1rem 1rem;
+    color: var(--dark-brown)
+}
+
+.trending-text {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+}
+
+
 
 body {
     display: grid;
@@ -21,13 +60,14 @@ body {
     color: #333333;
 }
 
+/* DASHBOARD ----------------------------------------- */
+
 .dashboard {
-    /* border: 2px solid blue; */
     grid-row: span 3;
     background-color: lightblue;
     background-image: url(./images/greens.jpg);
     background-size: cover;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.20);
     background-blend-mode: lighten;
     color: white;
 }
@@ -44,16 +84,10 @@ body {
     margin-left: 1.5em;
 }
 
-.dashboard-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 .sub-dashboard {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-    /* border: 2px solid darkblue; */
     margin: 3.5em 0em 0em 2em;
     gap: 1em;
 }
@@ -67,7 +101,6 @@ body {
 .svg {
     width: 1.5em;
     fill: var(--brown)
-    /* border: 2px solid darkblue; */
 }
 
 .reference {
@@ -76,15 +109,15 @@ body {
     margin-top: 100%;
 }
 
+/* HEADER ------------------------------------------- */
+
 header {
     display: grid;
     grid-template-rows: 90px 90px;
     grid-template-columns: 600px 400px;
-    /* border: 2px solid red; */
     grid-column: span 2;
-    box-shadow: 10px 10px 10px var(--brown);
     background-color: whitesmoke;
-    color: var(--brown);
+    color: var(--dark-brown);
 }
 
 .search-bar {
@@ -92,7 +125,6 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1em;
-    /* border: 2px solid pink; */
 }
 
 .search {
@@ -118,7 +150,6 @@ header {
 }
 
 .profile-header {
-    /* border: 2px solid pink; */
     display: flex;
     margin-left: 2em;
     margin-bottom: 1em;
@@ -126,17 +157,7 @@ header {
     align-items: center;
 }
 
-.header-small-text {
-    font-size: .8rem;
-    margin-bottom: .6em;
-}
-
-.header-big-text {
-    font-size: 1.2rem;
-}
-
 .buttons {
-    /* border: 2px solid pink; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,20 +170,16 @@ header {
     font-weight: bold;
     border-radius: 15px;
     background-color: var(--brown);
+    box-shadow: 2px 2px 5px gray;
     color: whitesmoke;
 }
 
+
+/* MAIN CONTENT ----------------------------------- */
 main {
-    /* border: 2px solid green; */
     grid-column: span 2;
     grid-row: span 2;
     background-color: var(--light-green);
-}
-
-.text {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem 11rem 1rem 1rem;
 }
 
 .board {
@@ -176,7 +193,6 @@ main {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    /* border: 2px solid darkgreen; */
     background-color: var(--light-green);
     gap: 1.2rem;
     margin-left: 1rem;
@@ -201,6 +217,9 @@ main {
     margin-left: 1em;
 }
 
+
+/* ANNOUNCEMENTS/TRENDING ---------------------------------- */
+
 .other {
     width: 30%;
     height: 700px;
@@ -208,13 +227,10 @@ main {
     margin-right: 1.5em;
     grid-template-rows: 1fr 50px 1fr;
     grid-template-columns: 1fr;
-    /* border: 2px solid brown; */
 }
 
 .announcements,
 .trending {
-    /* border: 2px solid purple; */
-    /* grid-row: span 2; */
     border-radius: 5px;
     background-color: whitesmoke;
     padding: 1.2em;
@@ -225,17 +241,13 @@ main {
     padding: 1em 0em;
     border-bottom: .5px solid lightgray;
 }
-.trending-text {
-    margin-top: 1.2rem;
-    font-size: 1.2rem;
-}
+
 
 #bottom {
     border: none;
 }
 
 .trending {
-    /* border: 2px solid purple; */
     grid-row: span 2;
     display: flex;
     flex-direction: column;
